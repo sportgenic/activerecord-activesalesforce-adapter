@@ -135,6 +135,9 @@ module ActiveRecord
         @class_to_entity_map = {}
       end
       
+      def indexes(table_name, display)
+        []
+      end
       
       def set_class_for_entity(klass, entity_name)
         debug("Setting @class_to_entity_map['#{entity_name.upcase}'] = #{klass} for connection #{self}")
